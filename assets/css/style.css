@@ -1,0 +1,140 @@
+body {
+  background-color: ivory;
+  height: 100vh;                
+  display: flex;                
+  justify-content: center;      
+  align-items: center;           
+  margin: 0;            
+}
+
+.calculator {
+  width: 30vw;
+  height: 70vh;
+  border: 1px solid rgb(216, 210, 210);
+  display: grid;
+  gap: 10px;
+  padding: 20px;
+  background-color: rgb(9, 9, 9);
+  border-radius: 20px;
+}
+
+.calculator>.form-group {
+    display: flex;
+    justify-content: space-between;
+    gap: 10px;
+}
+
+.calculator>.form-group>button {
+    width: 25%;
+    font-size: 30px;
+    border: none;
+    border-radius: 20px;
+    border: 1px solid rgb(236, 212, 81);
+    background-color: rgb(227, 225, 225);
+
+}
+
+.calculator>.form-group>button:hover {
+    background-color: aliceblue;
+    cursor: pointer;
+
+}
+
+.calculator>.form-group>input {
+    width: 100%;
+    font-size: 40px;
+    border: 1px solid rgb(47, 46, 46);
+    text-align: end;
+    outline: none;
+    border-radius: 20px;
+    padding-right: 10px;
+    margin-bottom: 15px;
+    overflow-y: scroll;
+
+}
+
+.calculator>.form-group>.btn {
+    font-size: 35px;
+    background-color: rgb(246, 183, 66);
+    border: 1px solid rgb(255, 238, 0);
+
+}
+
+.calculator>.form-group>.btn:hover {
+    background-color: orange;
+}
+
+.calculator>.form-group>.result {
+    font-size: 50px;
+    background-color: rgb(246, 183, 66);
+    border: 1px solid rgb(255, 238, 0);
+
+}
+
+.calculator>.form-group>.result:hover {
+    background-color: rgb(232, 133, 34);
+}
+
+
+/* Tablet screens (≤1024px) */
+
+@media (max-width: 1024px) {
+  .calculator {
+    width: 50vw;
+    height: 65vh;
+    padding: 15px;
+  }
+
+  .calculator > .form-group > input {
+    font-size: 32px;
+  }
+
+  .calculator > .form-group > button {
+    font-size: 25px;
+  }
+}
+
+
+/* Mobile screens (≤480px) */
+
+@media (max-width: 480px) {
+  
+  body {
+    padding: 10px;
+  }
+
+  .calculator {
+    width: 90vw;
+    height: auto;
+    padding: 15px;
+    gap: 8px;
+    border-radius: 15px;
+  }
+
+  .calculator > .form-group {
+    flex-wrap: wrap;
+    gap: 8px;
+  }
+
+  .calculator > .form-group > input {
+    font-size: 28px;
+    padding: 8px;
+  }
+
+  .calculator > .form-group > button {
+    flex: 1 1 22%;
+    height: 55px;
+    font-size: 22px;
+    border-radius: 15px;
+  }
+
+  .calculator > .form-group > .btn {
+    font-size: 25px;
+  }
+
+  .calculator > .form-group > .result {
+    flex: 1 1 100%;
+    font-size: 30px;
+    height: 60px;
+  }
+}
