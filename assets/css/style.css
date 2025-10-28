@@ -124,8 +124,9 @@ body {
   .calculator > .form-group > button {
     flex: 1 1 22%;
     height: 55px;
-    font-size: 22px;
+    font-size: 25px;
     border-radius: 15px;
+    color: rgb(9, 9, 9);
   }
 
   .calculator > .form-group > .btn {
@@ -137,4 +138,5 @@ body {
     font-size: 30px;
     height: 60px;
   }
+
 }
